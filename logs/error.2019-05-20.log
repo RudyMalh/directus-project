@@ -1,0 +1,939 @@
+[2019-05-20 09:04:35] api[].ERROR: Directus\Exception\NotInstalledException: This Directus API instance has not been configured. Install via the Directus App (eg: /admin) or read more about configuration at: https://docs.directus.io/getting-started/installation.html#configure in /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/ErrorHandlers/NotInstalledNotFoundHandler.php:21
+Stack trace:
+#0 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(530): Directus\Application\ErrorHandlers\NotInstalledNotFoundHandler->__invoke
+#1 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/CorsMiddleware.php(66): Slim\App->__invoke
+#2 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#3 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#4 [internal function]: Slim\DeferredCallable->__invoke
+#5 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#6 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#7 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack
+#8 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(313): Slim\App->process
+#9 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Application.php(161): Slim\App->run
+#10 /Users/rudymalhomme/Sites/directus/directus/public/index.php(5): Directus\Application\Application->run [] []
+[2019-05-20 05:05:54] api[_].ERROR: Directus\Database\Exception\ConnectionFailedException: Failed to connect to the database in /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/CoreServicesProvider.php:776
+Stack trace:
+#0 /Users/rudymalhomme/Sites/directus/directus/vendor/pimple/pimple/src/Pimple/Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#1 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Container/Container.php(27): Pimple\Container->offsetGet
+#2 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/CoreServicesProvider.php(1128): Directus\Container\Container->get
+#3 /Users/rudymalhomme/Sites/directus/directus/vendor/pimple/pimple/src/Pimple/Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#4 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Container/Container.php(27): Pimple\Container->offsetGet
+#5 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(20): Directus\Container\Container->get
+#6 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(35): Directus\get_directus_settings
+#7 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(130): Directus\get_directus_setting
+#8 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ProxyMiddleware.php(16): Directus\get_trusted_proxies
+#9 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#10 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#11 [internal function]: Slim\DeferredCallable->__invoke
+#12 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#13 /Users/rudymalhomme/Sites/directus/directus/vendor/akrabat/ip-address-middleware/src/IpAddress.php(113): Slim\App->Slim\{closure}
+#14 [internal function]: RKA\Middleware\IpAddress->__invoke
+#15 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#16 [internal function]: Slim\DeferredCallable->__invoke
+#17 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#18 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/CorsMiddleware.php(66): Slim\App->Slim\{closure}
+#19 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#20 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#21 [internal function]: Slim\DeferredCallable->__invoke
+#22 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#23 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ResponseCacheMiddleware.php(47): Slim\App->Slim\{closure}
+#24 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#25 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#26 [internal function]: Slim\DeferredCallable->__invoke
+#27 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#28 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#29 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack
+#30 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(313): Slim\App->process
+#31 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Application.php(161): Slim\App->run
+#32 /Users/rudymalhomme/Sites/directus/directus/public/index.php(5): Directus\Application\Application->run [] []
+[2019-05-20 05:06:35] api[_].ERROR: Directus\Database\Exception\ConnectionFailedException: Failed to connect to the database in /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/CoreServicesProvider.php:776
+Stack trace:
+#0 /Users/rudymalhomme/Sites/directus/directus/vendor/pimple/pimple/src/Pimple/Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#1 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Container/Container.php(27): Pimple\Container->offsetGet
+#2 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/CoreServicesProvider.php(1128): Directus\Container\Container->get
+#3 /Users/rudymalhomme/Sites/directus/directus/vendor/pimple/pimple/src/Pimple/Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#4 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Container/Container.php(27): Pimple\Container->offsetGet
+#5 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(20): Directus\Container\Container->get
+#6 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(35): Directus\get_directus_settings
+#7 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(130): Directus\get_directus_setting
+#8 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ProxyMiddleware.php(16): Directus\get_trusted_proxies
+#9 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#10 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#11 [internal function]: Slim\DeferredCallable->__invoke
+#12 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#13 /Users/rudymalhomme/Sites/directus/directus/vendor/akrabat/ip-address-middleware/src/IpAddress.php(113): Slim\App->Slim\{closure}
+#14 [internal function]: RKA\Middleware\IpAddress->__invoke
+#15 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#16 [internal function]: Slim\DeferredCallable->__invoke
+#17 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#18 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/CorsMiddleware.php(66): Slim\App->Slim\{closure}
+#19 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#20 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#21 [internal function]: Slim\DeferredCallable->__invoke
+#22 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#23 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ResponseCacheMiddleware.php(47): Slim\App->Slim\{closure}
+#24 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#25 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#26 [internal function]: Slim\DeferredCallable->__invoke
+#27 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#28 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#29 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack
+#30 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(313): Slim\App->process
+#31 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Application.php(161): Slim\App->run
+#32 /Users/rudymalhomme/Sites/directus/directus/public/index.php(5): Directus\Application\Application->run [] []
+[2019-05-20 05:07:16] api[_].ERROR: Directus\Database\Exception\ConnectionFailedException: Failed to connect to the database in /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/CoreServicesProvider.php:776
+Stack trace:
+#0 /Users/rudymalhomme/Sites/directus/directus/vendor/pimple/pimple/src/Pimple/Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#1 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Container/Container.php(27): Pimple\Container->offsetGet
+#2 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/CoreServicesProvider.php(1128): Directus\Container\Container->get
+#3 /Users/rudymalhomme/Sites/directus/directus/vendor/pimple/pimple/src/Pimple/Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#4 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Container/Container.php(27): Pimple\Container->offsetGet
+#5 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(20): Directus\Container\Container->get
+#6 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(35): Directus\get_directus_settings
+#7 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(130): Directus\get_directus_setting
+#8 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ProxyMiddleware.php(16): Directus\get_trusted_proxies
+#9 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#10 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#11 [internal function]: Slim\DeferredCallable->__invoke
+#12 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#13 /Users/rudymalhomme/Sites/directus/directus/vendor/akrabat/ip-address-middleware/src/IpAddress.php(113): Slim\App->Slim\{closure}
+#14 [internal function]: RKA\Middleware\IpAddress->__invoke
+#15 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#16 [internal function]: Slim\DeferredCallable->__invoke
+#17 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#18 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/CorsMiddleware.php(66): Slim\App->Slim\{closure}
+#19 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#20 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#21 [internal function]: Slim\DeferredCallable->__invoke
+#22 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#23 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ResponseCacheMiddleware.php(47): Slim\App->Slim\{closure}
+#24 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#25 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#26 [internal function]: Slim\DeferredCallable->__invoke
+#27 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#28 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#29 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack
+#30 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(313): Slim\App->process
+#31 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Application.php(161): Slim\App->run
+#32 /Users/rudymalhomme/Sites/directus/directus/public/index.php(5): Directus\Application\Application->run [] []
+[2019-05-20 05:07:17] api[_].ERROR: Directus\Database\Exception\ConnectionFailedException: Failed to connect to the database in /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/CoreServicesProvider.php:776
+Stack trace:
+#0 /Users/rudymalhomme/Sites/directus/directus/vendor/pimple/pimple/src/Pimple/Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#1 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Container/Container.php(27): Pimple\Container->offsetGet
+#2 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/CoreServicesProvider.php(1128): Directus\Container\Container->get
+#3 /Users/rudymalhomme/Sites/directus/directus/vendor/pimple/pimple/src/Pimple/Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#4 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Container/Container.php(27): Pimple\Container->offsetGet
+#5 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(20): Directus\Container\Container->get
+#6 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(35): Directus\get_directus_settings
+#7 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(130): Directus\get_directus_setting
+#8 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ProxyMiddleware.php(16): Directus\get_trusted_proxies
+#9 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#10 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#11 [internal function]: Slim\DeferredCallable->__invoke
+#12 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#13 /Users/rudymalhomme/Sites/directus/directus/vendor/akrabat/ip-address-middleware/src/IpAddress.php(113): Slim\App->Slim\{closure}
+#14 [internal function]: RKA\Middleware\IpAddress->__invoke
+#15 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#16 [internal function]: Slim\DeferredCallable->__invoke
+#17 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#18 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/CorsMiddleware.php(66): Slim\App->Slim\{closure}
+#19 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#20 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#21 [internal function]: Slim\DeferredCallable->__invoke
+#22 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#23 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ResponseCacheMiddleware.php(47): Slim\App->Slim\{closure}
+#24 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#25 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#26 [internal function]: Slim\DeferredCallable->__invoke
+#27 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#28 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#29 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack
+#30 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(313): Slim\App->process
+#31 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Application.php(161): Slim\App->run
+#32 /Users/rudymalhomme/Sites/directus/directus/public/index.php(5): Directus\Application\Application->run [] []
+[2019-05-20 05:07:18] api[_].ERROR: Directus\Database\Exception\ConnectionFailedException: Failed to connect to the database in /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/CoreServicesProvider.php:776
+Stack trace:
+#0 /Users/rudymalhomme/Sites/directus/directus/vendor/pimple/pimple/src/Pimple/Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#1 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Container/Container.php(27): Pimple\Container->offsetGet
+#2 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/CoreServicesProvider.php(1128): Directus\Container\Container->get
+#3 /Users/rudymalhomme/Sites/directus/directus/vendor/pimple/pimple/src/Pimple/Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#4 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Container/Container.php(27): Pimple\Container->offsetGet
+#5 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(20): Directus\Container\Container->get
+#6 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(35): Directus\get_directus_settings
+#7 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(130): Directus\get_directus_setting
+#8 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ProxyMiddleware.php(16): Directus\get_trusted_proxies
+#9 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#10 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#11 [internal function]: Slim\DeferredCallable->__invoke
+#12 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#13 /Users/rudymalhomme/Sites/directus/directus/vendor/akrabat/ip-address-middleware/src/IpAddress.php(113): Slim\App->Slim\{closure}
+#14 [internal function]: RKA\Middleware\IpAddress->__invoke
+#15 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#16 [internal function]: Slim\DeferredCallable->__invoke
+#17 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#18 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/CorsMiddleware.php(66): Slim\App->Slim\{closure}
+#19 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#20 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#21 [internal function]: Slim\DeferredCallable->__invoke
+#22 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#23 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ResponseCacheMiddleware.php(47): Slim\App->Slim\{closure}
+#24 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#25 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#26 [internal function]: Slim\DeferredCallable->__invoke
+#27 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#28 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#29 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack
+#30 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(313): Slim\App->process
+#31 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Application.php(161): Slim\App->run
+#32 /Users/rudymalhomme/Sites/directus/directus/public/index.php(5): Directus\Application\Application->run [] []
+[2019-05-20 05:07:29] api[_].ERROR: Directus\Database\Exception\ConnectionFailedException: Failed to connect to the database in /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/CoreServicesProvider.php:776
+Stack trace:
+#0 /Users/rudymalhomme/Sites/directus/directus/vendor/pimple/pimple/src/Pimple/Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#1 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Container/Container.php(27): Pimple\Container->offsetGet
+#2 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/CoreServicesProvider.php(1128): Directus\Container\Container->get
+#3 /Users/rudymalhomme/Sites/directus/directus/vendor/pimple/pimple/src/Pimple/Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#4 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Container/Container.php(27): Pimple\Container->offsetGet
+#5 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(20): Directus\Container\Container->get
+#6 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(35): Directus\get_directus_settings
+#7 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(130): Directus\get_directus_setting
+#8 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ProxyMiddleware.php(16): Directus\get_trusted_proxies
+#9 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#10 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#11 [internal function]: Slim\DeferredCallable->__invoke
+#12 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#13 /Users/rudymalhomme/Sites/directus/directus/vendor/akrabat/ip-address-middleware/src/IpAddress.php(113): Slim\App->Slim\{closure}
+#14 [internal function]: RKA\Middleware\IpAddress->__invoke
+#15 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#16 [internal function]: Slim\DeferredCallable->__invoke
+#17 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#18 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/CorsMiddleware.php(66): Slim\App->Slim\{closure}
+#19 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#20 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#21 [internal function]: Slim\DeferredCallable->__invoke
+#22 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#23 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ResponseCacheMiddleware.php(47): Slim\App->Slim\{closure}
+#24 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#25 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#26 [internal function]: Slim\DeferredCallable->__invoke
+#27 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#28 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#29 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack
+#30 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(313): Slim\App->process
+#31 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Application.php(161): Slim\App->run
+#32 /Users/rudymalhomme/Sites/directus/directus/public/index.php(5): Directus\Application\Application->run [] []
+[2019-05-20 05:07:39] api[_].ERROR: Directus\Database\Exception\ConnectionFailedException: Failed to connect to the database in /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/CoreServicesProvider.php:776
+Stack trace:
+#0 /Users/rudymalhomme/Sites/directus/directus/vendor/pimple/pimple/src/Pimple/Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#1 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Container/Container.php(27): Pimple\Container->offsetGet
+#2 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/CoreServicesProvider.php(1128): Directus\Container\Container->get
+#3 /Users/rudymalhomme/Sites/directus/directus/vendor/pimple/pimple/src/Pimple/Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#4 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Container/Container.php(27): Pimple\Container->offsetGet
+#5 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(20): Directus\Container\Container->get
+#6 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(35): Directus\get_directus_settings
+#7 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(130): Directus\get_directus_setting
+#8 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ProxyMiddleware.php(16): Directus\get_trusted_proxies
+#9 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#10 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#11 [internal function]: Slim\DeferredCallable->__invoke
+#12 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#13 /Users/rudymalhomme/Sites/directus/directus/vendor/akrabat/ip-address-middleware/src/IpAddress.php(113): Slim\App->Slim\{closure}
+#14 [internal function]: RKA\Middleware\IpAddress->__invoke
+#15 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#16 [internal function]: Slim\DeferredCallable->__invoke
+#17 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#18 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/CorsMiddleware.php(66): Slim\App->Slim\{closure}
+#19 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#20 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#21 [internal function]: Slim\DeferredCallable->__invoke
+#22 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#23 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ResponseCacheMiddleware.php(47): Slim\App->Slim\{closure}
+#24 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#25 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#26 [internal function]: Slim\DeferredCallable->__invoke
+#27 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#28 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#29 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack
+#30 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(313): Slim\App->process
+#31 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Application.php(161): Slim\App->run
+#32 /Users/rudymalhomme/Sites/directus/directus/public/index.php(5): Directus\Application\Application->run [] []
+[2019-05-20 05:07:48] api[_].ERROR: Directus\Database\Exception\ConnectionFailedException: Failed to connect to the database in /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/CoreServicesProvider.php:776
+Stack trace:
+#0 /Users/rudymalhomme/Sites/directus/directus/vendor/pimple/pimple/src/Pimple/Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#1 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Container/Container.php(27): Pimple\Container->offsetGet
+#2 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/CoreServicesProvider.php(1128): Directus\Container\Container->get
+#3 /Users/rudymalhomme/Sites/directus/directus/vendor/pimple/pimple/src/Pimple/Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#4 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Container/Container.php(27): Pimple\Container->offsetGet
+#5 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(20): Directus\Container\Container->get
+#6 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(35): Directus\get_directus_settings
+#7 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(130): Directus\get_directus_setting
+#8 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ProxyMiddleware.php(16): Directus\get_trusted_proxies
+#9 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#10 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#11 [internal function]: Slim\DeferredCallable->__invoke
+#12 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#13 /Users/rudymalhomme/Sites/directus/directus/vendor/akrabat/ip-address-middleware/src/IpAddress.php(113): Slim\App->Slim\{closure}
+#14 [internal function]: RKA\Middleware\IpAddress->__invoke
+#15 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#16 [internal function]: Slim\DeferredCallable->__invoke
+#17 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#18 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/CorsMiddleware.php(66): Slim\App->Slim\{closure}
+#19 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#20 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#21 [internal function]: Slim\DeferredCallable->__invoke
+#22 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#23 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ResponseCacheMiddleware.php(47): Slim\App->Slim\{closure}
+#24 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#25 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#26 [internal function]: Slim\DeferredCallable->__invoke
+#27 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#28 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#29 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack
+#30 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(313): Slim\App->process
+#31 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Application.php(161): Slim\App->run
+#32 /Users/rudymalhomme/Sites/directus/directus/public/index.php(5): Directus\Application\Application->run [] []
+[2019-05-20 05:07:54] api[_].ERROR: Directus\Database\Exception\ConnectionFailedException: Failed to connect to the database in /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/CoreServicesProvider.php:776
+Stack trace:
+#0 /Users/rudymalhomme/Sites/directus/directus/vendor/pimple/pimple/src/Pimple/Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#1 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Container/Container.php(27): Pimple\Container->offsetGet
+#2 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/CoreServicesProvider.php(1128): Directus\Container\Container->get
+#3 /Users/rudymalhomme/Sites/directus/directus/vendor/pimple/pimple/src/Pimple/Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#4 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Container/Container.php(27): Pimple\Container->offsetGet
+#5 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(20): Directus\Container\Container->get
+#6 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(35): Directus\get_directus_settings
+#7 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(130): Directus\get_directus_setting
+#8 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ProxyMiddleware.php(16): Directus\get_trusted_proxies
+#9 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#10 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#11 [internal function]: Slim\DeferredCallable->__invoke
+#12 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#13 /Users/rudymalhomme/Sites/directus/directus/vendor/akrabat/ip-address-middleware/src/IpAddress.php(113): Slim\App->Slim\{closure}
+#14 [internal function]: RKA\Middleware\IpAddress->__invoke
+#15 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#16 [internal function]: Slim\DeferredCallable->__invoke
+#17 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#18 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/CorsMiddleware.php(66): Slim\App->Slim\{closure}
+#19 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#20 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#21 [internal function]: Slim\DeferredCallable->__invoke
+#22 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#23 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ResponseCacheMiddleware.php(47): Slim\App->Slim\{closure}
+#24 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#25 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#26 [internal function]: Slim\DeferredCallable->__invoke
+#27 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#28 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#29 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack
+#30 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(313): Slim\App->process
+#31 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Application.php(161): Slim\App->run
+#32 /Users/rudymalhomme/Sites/directus/directus/public/index.php(5): Directus\Application\Application->run [] []
+[2019-05-20 05:09:55] api[_].ERROR: Directus\Database\Exception\ConnectionFailedException: Failed to connect to the database in /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/CoreServicesProvider.php:776
+Stack trace:
+#0 /Users/rudymalhomme/Sites/directus/directus/vendor/pimple/pimple/src/Pimple/Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#1 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Container/Container.php(27): Pimple\Container->offsetGet
+#2 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/CoreServicesProvider.php(1128): Directus\Container\Container->get
+#3 /Users/rudymalhomme/Sites/directus/directus/vendor/pimple/pimple/src/Pimple/Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#4 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Container/Container.php(27): Pimple\Container->offsetGet
+#5 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(20): Directus\Container\Container->get
+#6 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(35): Directus\get_directus_settings
+#7 /Users/rudymalhomme/Sites/directus/directus/src/helpers/settings.php(130): Directus\get_directus_setting
+#8 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ProxyMiddleware.php(16): Directus\get_trusted_proxies
+#9 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#10 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#11 [internal function]: Slim\DeferredCallable->__invoke
+#12 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#13 /Users/rudymalhomme/Sites/directus/directus/vendor/akrabat/ip-address-middleware/src/IpAddress.php(113): Slim\App->Slim\{closure}
+#14 [internal function]: RKA\Middleware\IpAddress->__invoke
+#15 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#16 [internal function]: Slim\DeferredCallable->__invoke
+#17 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#18 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/CorsMiddleware.php(66): Slim\App->Slim\{closure}
+#19 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#20 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#21 [internal function]: Slim\DeferredCallable->__invoke
+#22 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#23 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ResponseCacheMiddleware.php(47): Slim\App->Slim\{closure}
+#24 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#25 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#26 [internal function]: Slim\DeferredCallable->__invoke
+#27 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#28 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#29 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack
+#30 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(313): Slim\App->process
+#31 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Application.php(161): Slim\App->run
+#32 /Users/rudymalhomme/Sites/directus/directus/public/index.php(5): Directus\Application\Application->run [] []
+[2019-05-20 05:10:41] api[_].ERROR: Directus\Authentication\Exception\InvalidUserCredentialsException: Invalid user credentials in /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Authentication/Provider.php:156
+Stack trace:
+#0 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Authentication/Provider.php(116): Directus\Authentication\Provider->findUserWithCredentials
+#1 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Services/AuthService.php(47): Directus\Authentication\Provider->login
+#2 /Users/rudymalhomme/Sites/directus/directus/src/endpoints/Auth.php(49): Directus\Services\AuthService->loginWithCredentials
+#3 [internal function]: Directus\Api\Routes\Auth->authenticate
+#4 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func
+#5 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke
+#6 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/TableGatewayMiddleware.php(25): Slim\Route->__invoke
+#7 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#8 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#9 [internal function]: Slim\DeferredCallable->__invoke
+#10 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#11 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#12 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack
+#13 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(515): Slim\Route->run
+#14 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#15 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#16 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#17 [internal function]: Slim\DeferredCallable->__invoke
+#18 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#19 /Users/rudymalhomme/Sites/directus/directus/vendor/directus/proxy-detection/src/ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#20 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#21 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#22 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#23 [internal function]: Slim\DeferredCallable->__invoke
+#24 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#25 /Users/rudymalhomme/Sites/directus/directus/vendor/akrabat/ip-address-middleware/src/IpAddress.php(113): Slim\App->Slim\{closure}
+#26 [internal function]: RKA\Middleware\IpAddress->__invoke
+#27 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#28 [internal function]: Slim\DeferredCallable->__invoke
+#29 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#30 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/CorsMiddleware.php(66): Slim\App->Slim\{closure}
+#31 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#32 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#33 [internal function]: Slim\DeferredCallable->__invoke
+#34 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#35 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ResponseCacheMiddleware.php(47): Slim\App->Slim\{closure}
+#36 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#37 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#38 [internal function]: Slim\DeferredCallable->__invoke
+#39 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#40 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#41 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack
+#42 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(313): Slim\App->process
+#43 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Application.php(161): Slim\App->run
+#44 /Users/rudymalhomme/Sites/directus/directus/public/index.php(5): Directus\Application\Application->run [] []
+[2019-05-20 05:35:44] api[_].ERROR: Directus\Database\Exception\DuplicateItemException: Duplicate key "rudy.malh@gmail.com" for collection "directus_users" in /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Database/TableGateway/BaseTableGateway.php:829
+Stack trace:
+#0 /Users/rudymalhomme/Sites/directus/directus/vendor/zendframework/zend-db/src/TableGateway/AbstractTableGateway.php(264): Directus\Database\TableGateway\BaseTableGateway->executeInsert
+#1 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Database/TableGateway/BaseTableGateway.php(411): Zend\Db\TableGateway\AbstractTableGateway->insert
+#2 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Database/TableGateway/RelationalTableGateway.php(410): Directus\Database\TableGateway\BaseTableGateway->addRecordByArray
+#3 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Services/ItemsService.php(29): Directus\Database\TableGateway\RelationalTableGateway->createRecord
+#4 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Services/UsersService.php(48): Directus\Services\ItemsService->createItem
+#5 /Users/rudymalhomme/Sites/directus/directus/src/endpoints/Users.php(68): Directus\Services\UsersService->create
+#6 [internal function]: Directus\Api\Routes\Users->create
+#7 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func
+#8 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke
+#9 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/AbstractRateLimitMiddleware.php(34): Slim\Route->__invoke
+#10 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#11 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#12 [internal function]: Slim\DeferredCallable->__invoke
+#13 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#14 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/AuthenticationMiddleware.php(81): Slim\Route->Slim\{closure}
+#15 [internal function]: Directus\Application\Http\Middleware\AuthenticationMiddleware->__invoke
+#16 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#17 [internal function]: Slim\DeferredCallable->__invoke
+#18 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#19 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/TableGatewayMiddleware.php(25): Slim\Route->Slim\{closure}
+#20 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#21 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#24 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#25 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack
+#26 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(515): Slim\Route->run
+#27 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#28 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#29 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#30 [internal function]: Slim\DeferredCallable->__invoke
+#31 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#32 /Users/rudymalhomme/Sites/directus/directus/vendor/directus/proxy-detection/src/ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#33 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#34 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#35 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#36 [internal function]: Slim\DeferredCallable->__invoke
+#37 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#38 /Users/rudymalhomme/Sites/directus/directus/vendor/akrabat/ip-address-middleware/src/IpAddress.php(113): Slim\App->Slim\{closure}
+#39 [internal function]: RKA\Middleware\IpAddress->__invoke
+#40 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#41 [internal function]: Slim\DeferredCallable->__invoke
+#42 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#43 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/CorsMiddleware.php(66): Slim\App->Slim\{closure}
+#44 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#45 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#46 [internal function]: Slim\DeferredCallable->__invoke
+#47 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#48 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ResponseCacheMiddleware.php(47): Slim\App->Slim\{closure}
+#49 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#50 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#51 [internal function]: Slim\DeferredCallable->__invoke
+#52 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#53 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#54 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack
+#55 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(313): Slim\App->process
+#56 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Application.php(161): Slim\App->run
+#57 /Users/rudymalhomme/Sites/directus/directus/public/index.php(5): Directus\Application\Application->run [] []
+[2019-05-20 05:37:12] api[_].ERROR: Directus\Authentication\Exception\UserInactiveException: User inactive in /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Authentication/Provider.php:615
+Stack trace:
+#0 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Authentication/Provider.php(184): Directus\Authentication\Provider->validateUser
+#1 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Authentication/Provider.php(154): Directus\Authentication\Provider->findUserWithEmail
+#2 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Authentication/Provider.php(116): Directus\Authentication\Provider->findUserWithCredentials
+#3 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Services/AuthService.php(47): Directus\Authentication\Provider->login
+#4 /Users/rudymalhomme/Sites/directus/directus/src/endpoints/Auth.php(49): Directus\Services\AuthService->loginWithCredentials
+#5 [internal function]: Directus\Api\Routes\Auth->authenticate
+#6 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func
+#7 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke
+#8 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/TableGatewayMiddleware.php(25): Slim\Route->__invoke
+#9 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#10 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#11 [internal function]: Slim\DeferredCallable->__invoke
+#12 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#13 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#14 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack
+#15 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(515): Slim\Route->run
+#16 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#17 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#18 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#19 [internal function]: Slim\DeferredCallable->__invoke
+#20 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#21 /Users/rudymalhomme/Sites/directus/directus/vendor/directus/proxy-detection/src/ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#22 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#23 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#24 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#25 [internal function]: Slim\DeferredCallable->__invoke
+#26 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#27 /Users/rudymalhomme/Sites/directus/directus/vendor/akrabat/ip-address-middleware/src/IpAddress.php(113): Slim\App->Slim\{closure}
+#28 [internal function]: RKA\Middleware\IpAddress->__invoke
+#29 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#30 [internal function]: Slim\DeferredCallable->__invoke
+#31 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#32 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/CorsMiddleware.php(66): Slim\App->Slim\{closure}
+#33 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#34 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#35 [internal function]: Slim\DeferredCallable->__invoke
+#36 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#37 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ResponseCacheMiddleware.php(47): Slim\App->Slim\{closure}
+#38 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#39 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#40 [internal function]: Slim\DeferredCallable->__invoke
+#41 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#42 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#43 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack
+#44 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(313): Slim\App->process
+#45 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Application.php(161): Slim\App->run
+#46 /Users/rudymalhomme/Sites/directus/directus/public/index.php(5): Directus\Application\Application->run [] []
+[2019-05-20 05:37:19] api[_].ERROR: Directus\Authentication\Exception\UserInactiveException: User inactive in /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Authentication/Provider.php:615
+Stack trace:
+#0 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Authentication/Provider.php(184): Directus\Authentication\Provider->validateUser
+#1 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Authentication/Provider.php(154): Directus\Authentication\Provider->findUserWithEmail
+#2 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Authentication/Provider.php(116): Directus\Authentication\Provider->findUserWithCredentials
+#3 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Services/AuthService.php(47): Directus\Authentication\Provider->login
+#4 /Users/rudymalhomme/Sites/directus/directus/src/endpoints/Auth.php(49): Directus\Services\AuthService->loginWithCredentials
+#5 [internal function]: Directus\Api\Routes\Auth->authenticate
+#6 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func
+#7 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke
+#8 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/TableGatewayMiddleware.php(25): Slim\Route->__invoke
+#9 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#10 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#11 [internal function]: Slim\DeferredCallable->__invoke
+#12 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#13 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#14 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack
+#15 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(515): Slim\Route->run
+#16 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#17 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#18 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#19 [internal function]: Slim\DeferredCallable->__invoke
+#20 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#21 /Users/rudymalhomme/Sites/directus/directus/vendor/directus/proxy-detection/src/ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#22 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#23 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#24 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#25 [internal function]: Slim\DeferredCallable->__invoke
+#26 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#27 /Users/rudymalhomme/Sites/directus/directus/vendor/akrabat/ip-address-middleware/src/IpAddress.php(113): Slim\App->Slim\{closure}
+#28 [internal function]: RKA\Middleware\IpAddress->__invoke
+#29 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#30 [internal function]: Slim\DeferredCallable->__invoke
+#31 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#32 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/CorsMiddleware.php(66): Slim\App->Slim\{closure}
+#33 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#34 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#35 [internal function]: Slim\DeferredCallable->__invoke
+#36 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#37 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ResponseCacheMiddleware.php(47): Slim\App->Slim\{closure}
+#38 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#39 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#40 [internal function]: Slim\DeferredCallable->__invoke
+#41 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#42 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#43 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack
+#44 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(313): Slim\App->process
+#45 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Application.php(161): Slim\App->run
+#46 /Users/rudymalhomme/Sites/directus/directus/public/index.php(5): Directus\Application\Application->run [] []
+[2019-05-20 05:37:23] api[_].ERROR: Directus\Authentication\Exception\InvalidUserCredentialsException: Invalid user credentials in /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Authentication/Provider.php:156
+Stack trace:
+#0 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Authentication/Provider.php(116): Directus\Authentication\Provider->findUserWithCredentials
+#1 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Services/AuthService.php(47): Directus\Authentication\Provider->login
+#2 /Users/rudymalhomme/Sites/directus/directus/src/endpoints/Auth.php(49): Directus\Services\AuthService->loginWithCredentials
+#3 [internal function]: Directus\Api\Routes\Auth->authenticate
+#4 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func
+#5 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke
+#6 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/TableGatewayMiddleware.php(25): Slim\Route->__invoke
+#7 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#8 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#9 [internal function]: Slim\DeferredCallable->__invoke
+#10 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#11 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#12 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack
+#13 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(515): Slim\Route->run
+#14 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#15 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#16 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#17 [internal function]: Slim\DeferredCallable->__invoke
+#18 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#19 /Users/rudymalhomme/Sites/directus/directus/vendor/directus/proxy-detection/src/ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#20 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#21 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#22 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#23 [internal function]: Slim\DeferredCallable->__invoke
+#24 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#25 /Users/rudymalhomme/Sites/directus/directus/vendor/akrabat/ip-address-middleware/src/IpAddress.php(113): Slim\App->Slim\{closure}
+#26 [internal function]: RKA\Middleware\IpAddress->__invoke
+#27 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#28 [internal function]: Slim\DeferredCallable->__invoke
+#29 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#30 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/CorsMiddleware.php(66): Slim\App->Slim\{closure}
+#31 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#32 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#33 [internal function]: Slim\DeferredCallable->__invoke
+#34 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#35 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ResponseCacheMiddleware.php(47): Slim\App->Slim\{closure}
+#36 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#37 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#38 [internal function]: Slim\DeferredCallable->__invoke
+#39 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#40 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#41 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack
+#42 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(313): Slim\App->process
+#43 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Application.php(161): Slim\App->run
+#44 /Users/rudymalhomme/Sites/directus/directus/public/index.php(5): Directus\Application\Application->run [] []
+[2019-05-20 09:55:01] api[].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in /Users/rudymalhomme/Sites/directus/directus/src/helpers/app.php:252
+Stack trace:
+#0 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(530): Directus\{closure}
+#1 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/CorsMiddleware.php(66): Slim\App->__invoke
+#2 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#3 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#4 [internal function]: Slim\DeferredCallable->__invoke
+#5 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#6 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#7 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack
+#8 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(313): Slim\App->process
+#9 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Application.php(161): Slim\App->run
+#10 /Users/rudymalhomme/Sites/directus/directus/public/index.php(5): Directus\Application\Application->run [] []
+[2019-05-20 05:58:43] api[_].ERROR: Directus\Permissions\Exception\ForbiddenCollectionReadException: Reading items from "directus_collections" collection was denied in /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Permissions/Acl.php:988
+Stack trace:
+#0 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Database/TableGateway/BaseTableGateway.php(1170): Directus\Permissions\Acl->enforceReadOnce
+#1 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Database/TableGateway/RelationalTableGateway.php(1023): Directus\Database\TableGateway\BaseTableGateway->enforceReadPermission
+#2 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Database/TableGateway/RelationalTableGateway.php(1142): Directus\Database\TableGateway\RelationalTableGateway->fetchItems
+#3 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Database/TableGateway/RelationalTableGateway.php(824): Directus\Database\TableGateway\RelationalTableGateway->fetchData
+#4 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Services/TablesService.php(67): Directus\Database\TableGateway\RelationalTableGateway->getItems
+#5 /Users/rudymalhomme/Sites/directus/directus/src/endpoints/Collections.php(58): Directus\Services\TablesService->findAll
+#6 [internal function]: Directus\Api\Routes\Collections->all
+#7 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func
+#8 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke
+#9 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/AbstractRateLimitMiddleware.php(34): Slim\Route->__invoke
+#10 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#11 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#12 [internal function]: Slim\DeferredCallable->__invoke
+#13 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#14 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/AuthenticationMiddleware.php(81): Slim\Route->Slim\{closure}
+#15 [internal function]: Directus\Application\Http\Middleware\AuthenticationMiddleware->__invoke
+#16 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#17 [internal function]: Slim\DeferredCallable->__invoke
+#18 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#19 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/TableGatewayMiddleware.php(25): Slim\Route->Slim\{closure}
+#20 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#21 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#24 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#25 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack
+#26 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(515): Slim\Route->run
+#27 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#28 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#29 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#30 [internal function]: Slim\DeferredCallable->__invoke
+#31 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#32 /Users/rudymalhomme/Sites/directus/directus/vendor/directus/proxy-detection/src/ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#33 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#34 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#35 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#36 [internal function]: Slim\DeferredCallable->__invoke
+#37 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#38 /Users/rudymalhomme/Sites/directus/directus/vendor/akrabat/ip-address-middleware/src/IpAddress.php(113): Slim\App->Slim\{closure}
+#39 [internal function]: RKA\Middleware\IpAddress->__invoke
+#40 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#41 [internal function]: Slim\DeferredCallable->__invoke
+#42 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#43 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/CorsMiddleware.php(66): Slim\App->Slim\{closure}
+#44 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#45 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#46 [internal function]: Slim\DeferredCallable->__invoke
+#47 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#48 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ResponseCacheMiddleware.php(47): Slim\App->Slim\{closure}
+#49 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#50 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#51 [internal function]: Slim\DeferredCallable->__invoke
+#52 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#53 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#54 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack
+#55 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(313): Slim\App->process
+#56 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Application.php(161): Slim\App->run
+#57 /Users/rudymalhomme/Sites/directus/directus/public/index.php(5): Directus\Application\Application->run [] []
+[2019-05-20 10:09:18] api[_].ERROR: Directus\Database\Exception\ItemNotFoundException: Item not found in /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Database/TableGateway/RelationalTableGateway.php:1033
+Stack trace:
+#0 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Database/TableGateway/RelationalTableGateway.php(1142): Directus\Database\TableGateway\RelationalTableGateway->fetchItems
+#1 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Database/TableGateway/RelationalTableGateway.php(838): Directus\Database\TableGateway\RelationalTableGateway->fetchData
+#2 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Services/TablesService.php(153): Directus\Database\TableGateway\RelationalTableGateway->getItemsByIds
+#3 /Users/rudymalhomme/Sites/directus/directus/src/endpoints/Collections.php(74): Directus\Services\TablesService->findByIds
+#4 [internal function]: Directus\Api\Routes\Collections->read
+#5 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func
+#6 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke
+#7 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/AbstractRateLimitMiddleware.php(34): Slim\Route->__invoke
+#8 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#9 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#10 [internal function]: Slim\DeferredCallable->__invoke
+#11 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#12 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/AuthenticationMiddleware.php(81): Slim\Route->Slim\{closure}
+#13 [internal function]: Directus\Application\Http\Middleware\AuthenticationMiddleware->__invoke
+#14 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#15 [internal function]: Slim\DeferredCallable->__invoke
+#16 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#17 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/TableGatewayMiddleware.php(25): Slim\Route->Slim\{closure}
+#18 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#19 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#20 [internal function]: Slim\DeferredCallable->__invoke
+#21 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#22 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#23 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack
+#24 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(515): Slim\Route->run
+#25 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#26 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#27 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#28 [internal function]: Slim\DeferredCallable->__invoke
+#29 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#30 /Users/rudymalhomme/Sites/directus/directus/vendor/directus/proxy-detection/src/ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#31 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#32 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#33 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#34 [internal function]: Slim\DeferredCallable->__invoke
+#35 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#36 /Users/rudymalhomme/Sites/directus/directus/vendor/akrabat/ip-address-middleware/src/IpAddress.php(113): Slim\App->Slim\{closure}
+#37 [internal function]: RKA\Middleware\IpAddress->__invoke
+#38 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#39 [internal function]: Slim\DeferredCallable->__invoke
+#40 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#41 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/CorsMiddleware.php(66): Slim\App->Slim\{closure}
+#42 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#43 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#44 [internal function]: Slim\DeferredCallable->__invoke
+#45 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#46 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ResponseCacheMiddleware.php(47): Slim\App->Slim\{closure}
+#47 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#48 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#49 [internal function]: Slim\DeferredCallable->__invoke
+#50 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#51 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#52 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack
+#53 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(313): Slim\App->process
+#54 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Application.php(161): Slim\App->run
+#55 /Users/rudymalhomme/Sites/directus/directus/public/index.php(5): Directus\Application\Application->run [] []
+[2019-05-20 14:19:45] api[].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in /Users/rudymalhomme/Sites/directus/directus/src/helpers/app.php:252
+Stack trace:
+#0 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(530): Directus\{closure}
+#1 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/CorsMiddleware.php(66): Slim\App->__invoke
+#2 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#3 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#4 [internal function]: Slim\DeferredCallable->__invoke
+#5 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#6 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#7 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack
+#8 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(313): Slim\App->process
+#9 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Application.php(161): Slim\App->run
+#10 /Users/rudymalhomme/Sites/directus/directus/public/index.php(5): Directus\Application\Application->run [] []
+[2019-05-20 10:20:06] api[_].ERROR: Directus\Permissions\Exception\ForbiddenCollectionReadException: Reading items from "directus_collections" collection was denied in /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Permissions/Acl.php:988
+Stack trace:
+#0 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Database/TableGateway/BaseTableGateway.php(1170): Directus\Permissions\Acl->enforceReadOnce
+#1 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Database/TableGateway/RelationalTableGateway.php(1023): Directus\Database\TableGateway\BaseTableGateway->enforceReadPermission
+#2 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Database/TableGateway/RelationalTableGateway.php(1142): Directus\Database\TableGateway\RelationalTableGateway->fetchItems
+#3 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Database/TableGateway/RelationalTableGateway.php(824): Directus\Database\TableGateway\RelationalTableGateway->fetchData
+#4 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Services/TablesService.php(67): Directus\Database\TableGateway\RelationalTableGateway->getItems
+#5 /Users/rudymalhomme/Sites/directus/directus/src/endpoints/Collections.php(58): Directus\Services\TablesService->findAll
+#6 [internal function]: Directus\Api\Routes\Collections->all
+#7 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func
+#8 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke
+#9 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/AbstractRateLimitMiddleware.php(34): Slim\Route->__invoke
+#10 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#11 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#12 [internal function]: Slim\DeferredCallable->__invoke
+#13 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#14 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/AuthenticationMiddleware.php(81): Slim\Route->Slim\{closure}
+#15 [internal function]: Directus\Application\Http\Middleware\AuthenticationMiddleware->__invoke
+#16 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#17 [internal function]: Slim\DeferredCallable->__invoke
+#18 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#19 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/TableGatewayMiddleware.php(25): Slim\Route->Slim\{closure}
+#20 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#21 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#24 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#25 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack
+#26 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(515): Slim\Route->run
+#27 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#28 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#29 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#30 [internal function]: Slim\DeferredCallable->__invoke
+#31 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#32 /Users/rudymalhomme/Sites/directus/directus/vendor/directus/proxy-detection/src/ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#33 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#34 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#35 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#36 [internal function]: Slim\DeferredCallable->__invoke
+#37 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#38 /Users/rudymalhomme/Sites/directus/directus/vendor/akrabat/ip-address-middleware/src/IpAddress.php(113): Slim\App->Slim\{closure}
+#39 [internal function]: RKA\Middleware\IpAddress->__invoke
+#40 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#41 [internal function]: Slim\DeferredCallable->__invoke
+#42 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#43 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/CorsMiddleware.php(66): Slim\App->Slim\{closure}
+#44 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#45 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#46 [internal function]: Slim\DeferredCallable->__invoke
+#47 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#48 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ResponseCacheMiddleware.php(47): Slim\App->Slim\{closure}
+#49 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#50 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#51 [internal function]: Slim\DeferredCallable->__invoke
+#52 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#53 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#54 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack
+#55 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(313): Slim\App->process
+#56 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Application.php(161): Slim\App->run
+#57 /Users/rudymalhomme/Sites/directus/directus/public/index.php(5): Directus\Application\Application->run [] []
+[2019-05-20 10:21:34] api[_].ERROR: Directus\Permissions\Exception\ForbiddenCollectionReadException: Reading items from "directus_collections" collection was denied in /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Permissions/Acl.php:988
+Stack trace:
+#0 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Database/TableGateway/BaseTableGateway.php(1170): Directus\Permissions\Acl->enforceReadOnce
+#1 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Database/TableGateway/RelationalTableGateway.php(1023): Directus\Database\TableGateway\BaseTableGateway->enforceReadPermission
+#2 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Database/TableGateway/RelationalTableGateway.php(1142): Directus\Database\TableGateway\RelationalTableGateway->fetchItems
+#3 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Database/TableGateway/RelationalTableGateway.php(824): Directus\Database\TableGateway\RelationalTableGateway->fetchData
+#4 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Services/TablesService.php(67): Directus\Database\TableGateway\RelationalTableGateway->getItems
+#5 /Users/rudymalhomme/Sites/directus/directus/src/endpoints/Collections.php(58): Directus\Services\TablesService->findAll
+#6 [internal function]: Directus\Api\Routes\Collections->all
+#7 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func
+#8 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke
+#9 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/AbstractRateLimitMiddleware.php(34): Slim\Route->__invoke
+#10 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#11 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#12 [internal function]: Slim\DeferredCallable->__invoke
+#13 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#14 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/AuthenticationMiddleware.php(81): Slim\Route->Slim\{closure}
+#15 [internal function]: Directus\Application\Http\Middleware\AuthenticationMiddleware->__invoke
+#16 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#17 [internal function]: Slim\DeferredCallable->__invoke
+#18 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#19 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/TableGatewayMiddleware.php(25): Slim\Route->Slim\{closure}
+#20 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#21 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#24 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#25 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack
+#26 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(515): Slim\Route->run
+#27 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#28 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#29 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#30 [internal function]: Slim\DeferredCallable->__invoke
+#31 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#32 /Users/rudymalhomme/Sites/directus/directus/vendor/directus/proxy-detection/src/ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#33 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#34 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#35 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#36 [internal function]: Slim\DeferredCallable->__invoke
+#37 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#38 /Users/rudymalhomme/Sites/directus/directus/vendor/akrabat/ip-address-middleware/src/IpAddress.php(113): Slim\App->Slim\{closure}
+#39 [internal function]: RKA\Middleware\IpAddress->__invoke
+#40 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#41 [internal function]: Slim\DeferredCallable->__invoke
+#42 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#43 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/CorsMiddleware.php(66): Slim\App->Slim\{closure}
+#44 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#45 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#46 [internal function]: Slim\DeferredCallable->__invoke
+#47 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#48 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ResponseCacheMiddleware.php(47): Slim\App->Slim\{closure}
+#49 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#50 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#51 [internal function]: Slim\DeferredCallable->__invoke
+#52 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#53 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#54 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack
+#55 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(313): Slim\App->process
+#56 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Application.php(161): Slim\App->run
+#57 /Users/rudymalhomme/Sites/directus/directus/public/index.php(5): Directus\Application\Application->run [] []
+[2019-05-20 14:23:30] api[].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in /Users/rudymalhomme/Sites/directus/directus/src/helpers/app.php:252
+Stack trace:
+#0 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(530): Directus\{closure}
+#1 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/CorsMiddleware.php(66): Slim\App->__invoke
+#2 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#3 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#4 [internal function]: Slim\DeferredCallable->__invoke
+#5 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#6 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#7 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack
+#8 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(313): Slim\App->process
+#9 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Application.php(161): Slim\App->run
+#10 /Users/rudymalhomme/Sites/directus/directus/public/index.php(5): Directus\Application\Application->run [] []
+[2019-05-20 10:23:39] api[_].ERROR: Directus\Authentication\Exception\InvalidUserCredentialsException: Invalid user credentials in /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Authentication/Provider.php:161
+Stack trace:
+#0 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Authentication/Provider.php(116): Directus\Authentication\Provider->findUserWithCredentials
+#1 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Services/AuthService.php(47): Directus\Authentication\Provider->login
+#2 /Users/rudymalhomme/Sites/directus/directus/src/endpoints/Auth.php(49): Directus\Services\AuthService->loginWithCredentials
+#3 [internal function]: Directus\Api\Routes\Auth->authenticate
+#4 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func
+#5 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke
+#6 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/TableGatewayMiddleware.php(25): Slim\Route->__invoke
+#7 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#8 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#9 [internal function]: Slim\DeferredCallable->__invoke
+#10 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#11 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#12 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack
+#13 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(515): Slim\Route->run
+#14 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#15 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#16 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#17 [internal function]: Slim\DeferredCallable->__invoke
+#18 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#19 /Users/rudymalhomme/Sites/directus/directus/vendor/directus/proxy-detection/src/ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#20 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#21 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#22 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#23 [internal function]: Slim\DeferredCallable->__invoke
+#24 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#25 /Users/rudymalhomme/Sites/directus/directus/vendor/akrabat/ip-address-middleware/src/IpAddress.php(113): Slim\App->Slim\{closure}
+#26 [internal function]: RKA\Middleware\IpAddress->__invoke
+#27 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#28 [internal function]: Slim\DeferredCallable->__invoke
+#29 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#30 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/CorsMiddleware.php(66): Slim\App->Slim\{closure}
+#31 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#32 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#33 [internal function]: Slim\DeferredCallable->__invoke
+#34 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#35 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Http/Middleware/ResponseCacheMiddleware.php(47): Slim\App->Slim\{closure}
+#36 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#37 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/DeferredCallable.php(43): call_user_func_array
+#38 [internal function]: Slim\DeferredCallable->__invoke
+#39 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func
+#40 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#41 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(405): Slim\App->callMiddlewareStack
+#42 /Users/rudymalhomme/Sites/directus/directus/vendor/slim/slim/Slim/App.php(313): Slim\App->process
+#43 /Users/rudymalhomme/Sites/directus/directus/src/core/Directus/Application/Application.php(161): Slim\App->run
+#44 /Users/rudymalhomme/Sites/directus/directus/public/index.php(5): Directus\Application\Application->run [] []
