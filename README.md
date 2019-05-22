@@ -1,4 +1,4 @@
-# How to install Directus Suite
+# How to install Directus 7 Suite
 
 This project has been deployed on a VPS with quickly installation
 
